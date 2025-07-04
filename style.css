@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #F5F3FF;
+    color: #1E1B4B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+header {
+    background: linear-gradient(to right, #4C1D95, #5B21B6);
+    width: 100%;
+    height: 150px;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nome-frase h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.frase {
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+.imagem {
+    margin-top: -30px;
+}
+
+.foto {
+    width: 110px;
+    height: 120px;
+    border-radius: 15px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.nav {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.links {
+    padding: 10px 20px;
+    background: #EDE9FE;
+    color: #5B21B6;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px solid #5B21B6;
+    transition: all 0.3s ease;
+}
+
+.links:hover {
+    background-color: #C4B5FD;
+    color: #1E1B4B;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.whats-logo {
+    background: #25D366;
+    color: white;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.fa-whatsapp {
+    font-size: 30px;
+    margin-top: 10px;
+    color: white;
+}
+
+.principal {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.sobre,
+.habilidades,
+.projetos,
+.info {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    animation: fadeIn 2s ease;
+}
+
+.sobre h2,
+.habilidades h2,
+.projetos h2,
+.info h2 {
+    margin-bottom: 15px;
+    color: #5B21B6;
+}
+
+.habilidades ul {
+    padding-left: 20px;
+    line-height: 1.8;
+    list-style-type: disc;
+}
+
+.projetos p,.info p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.redes {
+    text-decoration: none;
+    list-style-type: none;
+    color: #5B21B6;
+    font-size: 18px;
+}
+
+
+footer {
+    background: #4C1D95;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.copy {
+    margin: 5px 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .foto {
+        width: 90px;
+        height: 110px;
+    }
+
+    .nome-frase h1 {
+        font-size: 24px;
+    }
+
+    .links {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .principal {
+        gap: 30px;
+    }
+
+    .sobre,
+    .habilidades,
+    .projetos,
+    .info {
+        padding: 20px;
+    }
+
+}
